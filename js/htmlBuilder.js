@@ -3,13 +3,16 @@ const fs = require("fs");
 
 const buildEngineerCards= (employee) => {
     return card = `
-            <div class="col-4">
+            <div class="engineer col-3">
                 <div class="card">
-                    <h4 class="card-header">${employee.getName()}</h4>
+                    <h4 class="card-header">
+                        ${employee.getName()}<br>
+                        <span class="className"><i class="fas fa-tools"></i> ${employee.getClass()}</span>
+                    </h4>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item"><strong>Employee ID:</strong> ${employee.getID()}</li>
                         <li class="list-group-item"><strong>Email:</strong> ${employee.getEmail()}</li>
-                        <li class="list-group-item"><a href="${employee.getGithubLink()}" target="blank">${employee.getUserName()}</a></li>
+                        <li class="list-group-item"><strong>Github:</strong><a href="${employee.getGithubLink()}" target="blank">${employee.getUserName()}</a></li>
                     </ul>
                 </div>
             </div>
@@ -18,9 +21,12 @@ const buildEngineerCards= (employee) => {
 
 const buildManagerCards = (employee) => {
     return card = `
-            <div class="col-4">
+            <div class="manager col-3">
                 <div class="card">
-                    <h4 class="card-header">${employee.getName()}</h4>
+                    <h4 class="card-header">
+                        ${employee.getName()}<br>
+                        <span class="className"><i class="fas fa-tasks"></i> ${employee.getClass()}</span>
+                    </h4>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item"><strong>Employee ID:</strong> ${employee.getID()}</li>
                         <li class="list-group-item"><strong>Email:</strong> ${employee.getEmail()}</li>
@@ -33,9 +39,12 @@ const buildManagerCards = (employee) => {
 
 const buildInternCards = (employee) => {
     return card = `
-            <div class="col-4">
+            <div class="intern col-3">
                 <div class="card">
-                    <h4 class="card-header">${employee.getName()}</h4>
+                    <h4 class="card-header">
+                        ${employee.getName()}<br>
+                        <span class="className"><i class="fas fa-graduation-cap"></i> ${employee.getClass()}</span>
+                    </h4>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item"><strong>Employee ID:</strong> ${employee.getID()}</li>
                         <li class="list-group-item"><strong>Email:</strong> ${employee.getEmail()}</li>

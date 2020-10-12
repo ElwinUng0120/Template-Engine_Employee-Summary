@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-    <!-- original CSS file-->
+    <!-- Original CSS file -->
+    <link rel="stylesheet" href="./css/style.css" />
 
 </head>
 <body>
@@ -16,15 +17,24 @@
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <h1 class="display-4 text-center">Your Team Viewer</h1>
+            <div id="selector" class="text-center">
+                <button value="All">All</button> | 
+                <button value="Engineer">Engineer</button> |
+                <button value="Manager">Manager</button> |
+                <button value="Intern">Intern</button>
+            </div>
         </div>
     </div>
-
+    
+    <!-- Employee cards -->
     <div class="container">
-        <div class="row">
+        <div class="row justify-content-center">
             {{ employeeCards }}
         </div>
     </div>
     <!-- jQuery CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <!-- Manager script -->
+    <script src="./js/pageManager.js"></script>
 </body>
 </html>
