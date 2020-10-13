@@ -12,7 +12,7 @@ const buildEngineerCards= (employee) => {
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item"><strong>Employee ID:</strong> ${employee.getID()}</li>
                         <li class="list-group-item"><strong>Email:</strong> ${employee.getEmail()}</li>
-                        <li class="list-group-item"><strong>Github:</strong><a href="${employee.getGithubLink()}" target="blank">${employee.getUserName()}</a></li>
+                        <li class="list-group-item"><strong>Github:</strong><a href="${employee.getGithubLink()}" target="blank"> ${employee.getUsername()}</a></li>
                     </ul>
                 </div>
             </div>

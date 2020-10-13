@@ -2,8 +2,10 @@
 const fs = require("fs");
 // import inquirer
 const inquirer = require("inquirer");
-// import class.js
-const classes = require("./js/class.js");
+// import classes
+const Engineer = require("./js/lib/engineer.js");
+const Manager = require("./js/lib/manager.js");
+const Intern = require("./js/lib/intern.js");
 // import htmlBuilder.js
 const htmlBuilder = require("./js/htmlBuilder.js");
 
@@ -46,7 +48,7 @@ async function main(){
                     message: "Please enter his/her Github username",
                     name: "github"
                 });
-                employees.push(new classes.Engineer(id, response1.name, response1.email, response2.github));
+                employees.push(new Engineer(id, response1.name, response1.email, response2.github));
                 id++;
                 break;
             }
@@ -58,7 +60,7 @@ async function main(){
                     message: "Please enter his/her office number",
                     name: "offNumb"
                 });
-                employees.push(new classes.Manager(id, response1.name, response1.email, response2.offNumb));
+                employees.push(new Manager(id, response1.name, response1.email, response2.offNumb));
                 id++;
                 break;
             }
@@ -70,7 +72,7 @@ async function main(){
                     message: "Please enter his/her school name",
                     name: "school"
                 });
-                employees.push(new classes.Intern(id, response1.name, response1.email, response2.school));
+                employees.push(new Intern(id, response1.name, response1.email, response2.school));
                 id++;
                 break;
             }

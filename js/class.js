@@ -1,4 +1,7 @@
-// constructors for different positions/classes
+/*
+    THIS IS NO LONGER USED
+*/
+// constructors for different positions/classes\
 function Engineer(id, name, email, username){
     this.class = "Engineer";
     this.id = id;
