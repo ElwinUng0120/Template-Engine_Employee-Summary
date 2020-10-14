@@ -29,15 +29,17 @@ This project was made using **HTML5**, **CSS**, **Bootstrap**, **JaveScript**, *
 - When you are done entering all the info, select *End Program* and the generator output the generated webpage as **main.html**, which will be located in the same folder as **main.js**
 
 ### Showcase video
-
+https://drive.google.com/file/d/1h4XVhjknIvgNctrCbSE-a2Sfz2NOgkDp/view?usp=sharing
 
 ### Main menu
+<img src="./img/readme/mainMenu.jpg" alt="Main menu showcase" style="margin-left: auto; margin-right: auto" />
 
 ### Prompting
+<img src="./img/readme/duringInput.jpg" alt="Prompt showcase" style="margin-left: auto; margin-right: auto" />
+<img src="./img/readme/afterInput.jpg" alt="After prompt showcase" style="margin-left: auto; margin-right: auto" />
 
 ### End program
+<img src="./img/readme/endProgram.jpg" alt="Generator showcase" style="margin-left: auto; margin-right: auto" />
 
 ### Example output
-
-
-
+<img src="./img/readme/example.jpg" alt="Example website" style="margin-left: auto; margin-right: auto" />
